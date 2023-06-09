@@ -48,7 +48,7 @@ public class MainVerticleTest {
                 	System.out.println(body);
                     // Assert the response
                     testContext.verify(() -> {
-                    	assertEquals("{\"status\":\"200\",\"message\":\"Listagem de usuários\",\"users\":[{\"name\":\"John Doe\",\"age\":30},{\"name\":\"Jane Smith\",\"age\":35}]}",
+                    	assertEquals("{\"status\":\"200\",\"message\":\"Listagem de usuários\",\"users\":[{\"id\":1,\"name\":\"John Doe\",\"age\":30},{\"id\":2,\"name\":\"Jane Smith\",\"age\":35}]}",
                     			body.toString());
                     });
 
