@@ -39,7 +39,7 @@ Para uma introdução das capacidades do toolkit vamos abordar conceitos básico
 
 O Vert.x oferece uma solução de roteamento flexível e fácil de usar por meio da classe Router.
 Vamos começar com um exemplo de código que demonstra como configurar rotas básicas no Vert.x:
-
+{
 @Override
   public void start(Promise<Void> startPromise) throws Exception {
 
@@ -97,7 +97,7 @@ Dentro dos manipuladores de rota, podemos acessar informações da requisição,
 Em seguida, configuramos o cabeçalho Content-Type como application/json e enviamos a resposta adequada de acordo com a rota. Por fim, criamos um servidor HTTP utilizando vertx.createHttpServer(), configuramos o roteador como manipulador de requisições com requestHandler(router) e o escutamos na porta 8080 com o método listen.
 
 Agora, vamos criar uma classe de teste para demonstrar como utilizar o roteamento e realizar chamadas às rotas configuradas:
-
+{
 @ExtendWith(VertxExtension.class)
 public class MainVerticleTest {
 
